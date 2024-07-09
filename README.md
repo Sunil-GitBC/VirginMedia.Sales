@@ -14,4 +14,4 @@ I have designed the application around Clean Architecture principles to achieve 
   Application
   Infrastructure
 
-I would have done some further refactoring to make the code more resilient and also increase code coverage by adding more tests.
+I would have done some further refactoring to make the code more resilient and also increase code coverage by adding more tests and added more features to the Grid to add sorting and improve CSS.
