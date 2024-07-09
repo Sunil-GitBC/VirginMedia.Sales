@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VirginMedia.Sales.Domain\VirginMedia.Sales.Domain.csproj" />
+    <ProjectReference Include="..\VirginMedia.Sales.Infrastructure\VirginMedia.Sales.Infrastructure.csproj" />
+    <ProjectReference Include="..\VirginMedia.Sales.Web.Models\VirginMedia.Sales.Web.Models.csproj" />
+  </ItemGroup>
+
+</Project>

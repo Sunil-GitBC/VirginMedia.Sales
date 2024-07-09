@@ -1,0 +1,20 @@
+﻿@using VirginMedia.Sales.Web.Components.ProductSalesTable
+@page "/"
+<PageTitle>Product Sales</PageTitle>
+
+<h1>Product Sales</h1>
+
+<div class="row">
+    <div class="col-md-10">
+        @*Place for search and sort*@
+    </div>
+
+</div>
+<div class="row">
+    <ProductSalesTable ProductSales="ProductSalesList" />
+</div>
+<div class="row">
+    <div class="col">
+        <Pagination PagingData="PagingData" Spread="2" SelectedPage="SelectedPage" />
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VirginMedia.Sales.Application\VirginMedia.Sales.Application.csproj" />
+    <ProjectReference Include="..\VirginMedia.Sales.Infrastructure\VirginMedia.Sales.Infrastructure.csproj" />
+    <ProjectReference Include="..\VirginMedia.Sales.Web.Models\VirginMedia.Sales.Web.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\Data.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

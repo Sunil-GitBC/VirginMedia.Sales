@@ -1,0 +1,54 @@
+﻿@if (ProductSales.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Segment</th>
+                <th scope="col">Country</th>
+                <th scope="col">Product</th>
+                <th scope="col">Discount Band</th>
+                <th scope="col">Units Sold</th>
+                <th scope="col">Manufacturing Price</th>
+                <th scope="col">Sale Price</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var productSale in ProductSales)
+            {
+                <tr>
+                    <td class="align-middle">
+                        @productSale.Segment
+                    </td>
+                    <td class="align-middle">
+                        @productSale.Country
+                    </td>
+                    <td class="align-middle">
+                        @productSale.Product
+                    </td>
+                    <td class="align-middle">
+                        @productSale.DiscountBand
+                    </td>
+                    <td class="align-middle">
+                        @productSale.UnitsSold
+                    </td>
+                    <td class="align-middle">
+                        £ @productSale.ManufacturingPrice
+                    </td>
+                    <td class="align-middle">
+                        £ @productSale.SalePrice
+                    </td>
+                    <td class="align-middle">
+                        @productSale.Date
+                    </td>
+                </tr>
+             }
+            </tbody>
+    </table>
+}
+else
+{
+    <span>
+        Loading product sales...
+    </span>
+}
