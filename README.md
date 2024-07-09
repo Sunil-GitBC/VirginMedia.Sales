@@ -1,6 +1,6 @@
 Below is a brief summary of the test.
 
-The solution included the following project
+The solution includes the following projects
 •	VirginMedia.Sales.Api
 •	VirginMedia.Sales.Application
 •	VirginMedia.Sales.Domain
@@ -13,5 +13,9 @@ I have designed the application around Clean Architecture principles to achieve 
   Domain
   Application
   Infrastructure
+
+Dependency injection principle has been widely used wherever applicable to make the components loosely coupled and also easily testable.
+
+The unit test projects uses Moq and xUnit frameworks
 
 I would have done some further refactoring to make the code more resilient and also increase code coverage by adding more tests and added more features to the Grid to add sorting and improve CSS.
